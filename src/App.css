@@ -64,7 +64,9 @@ h1,h2,h3,h4,h5,h6,p,a{
   text-align: center;
   font-family: 'Pacifico', cursive;
 }
-
+.logo_img {
+  width: 100px;
+}
 a.aTag {
   position: relative;
   text-decoration: none;

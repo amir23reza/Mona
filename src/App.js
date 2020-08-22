@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/burgerMenuStyles.css'
 import './App.css'
 import HomePage from './pages/homePage'
 
