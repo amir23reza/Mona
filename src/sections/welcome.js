@@ -27,7 +27,7 @@ const Welcome = () => {
             </Typing>
           </div>
         </MDBContainer>
-        <MDBAnimation
+        <MDBAnimation reveal
           type="fadeInDown"
           duration="1500ms"
           delay="5000ms"

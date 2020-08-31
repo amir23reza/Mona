@@ -19,13 +19,13 @@ const ContactMe = () => {
         </Typing>
         <MDBRow>
           <MDBCol lg="5" md="5" sm="12">
-            <MDBAnimation type="fadeInUp" duration="1200ms" delay="500ms">
+            <MDBAnimation reveal type="fadeInUp" duration="1200ms" delay="500ms">
               <h2 className="location-h2">
                 <MDBIcon icon="map-marker" />
                 <span className="distinct-color"> Tehran, </span>Iran
               </h2>
             </MDBAnimation>
-            <MDBAnimation type="fadeInUp" duration="1200ms" delay="1500ms">
+            <MDBAnimation reveal type="fadeInUp" duration="1200ms" delay="1500ms">
               <h4 className="email-h4">
                 <a className="aTag" href="mailto:monaseyf25@gmail.com">
                   <MDBIcon icon="at" />
@@ -36,7 +36,7 @@ const ContactMe = () => {
                 </a>
               </h4>
             </MDBAnimation>
-            <MDBAnimation type="fadeInUp" duration="1200ms" delay="2500ms">
+            <MDBAnimation reveal type="fadeInUp" duration="1200ms" delay="2500ms">
               <h4 className="phone-h4">
                 <a className="aTag" href="tel:+ 98 935 436 5170">
                   <MDBIcon icon="phone" />
@@ -50,7 +50,7 @@ const ContactMe = () => {
           </MDBCol>
 
           <MDBCol lg="7" md="7" sm="12" className="contactForm">
-            <MDBAnimation type="fadeInDown" duration="1800ms" delay="3500ms">
+            <MDBAnimation reveal type="fadeInDown" duration="1800ms" delay="3500ms">
               <MDBRow>
                 <MDBCol md="6">
                   <div className="md-form mb-0">
