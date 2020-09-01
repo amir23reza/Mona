@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <MDBAnimation type="fadeIn" duration="1s">
       <div className="overlay" />
-      <section id="welcome" className="section">
+      <section id="welcome" onWheel={(data) => {/*data.deltaY > 0 ? console.log("function to be executed ...") : null*/}} className="section">
         <MDBContainer>
           <div className="titlesBack">
             <Typing startDelay={1500} className="z5">

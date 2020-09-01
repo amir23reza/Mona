@@ -386,6 +386,7 @@ img.avatar {
   background-size: cover;
   width: 100%;
   min-height: 100vh;
+  transition: all 1000ms;
 }
 .tabContainer {
   cursor: pointer;
@@ -426,8 +427,79 @@ span.progressText {
 .marginTop {
   margin-top: 75px;
 }
+@media (max-width : 500px) {
+  .marginTop {
+    margin-top: 35px;
+  }
+}
 p.skillLabel {
   margin-bottom: -15px !important;
   font-family: montserrat,sans-serif;
 }
 /* Skills */
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+  border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #646464;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e22b6f;
+  transition: all 500ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e22b6f;
+  width: 8px;
+}
+/* Scroll bar */
+
+/* About Me */
+#aboutMeSection {
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+.aboutMeOverlay{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0;
+}
+.segmentTitle {
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  line-height: 2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.activeSegmentTitle {
+  color: #e22b6f;
+  border-bottom: solid 1px #e22b6f;
+  border-radius: 5px;
+  padding: 1%;
+}
+.descriptionP{
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  font-family: montserrat,sans-serif;
+}
+p.eventDate {
+  text-align: center;
+  color: #e22a6b;
+  font-family: 'Pacifico', cursive;
+}
+/* About Me */

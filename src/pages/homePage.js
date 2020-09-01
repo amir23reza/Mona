@@ -4,12 +4,13 @@ import ContactMe from '../sections/contactMe'
 import Welcome from '../sections/welcome'
 import Testimonials from '../sections/testimonials'
 import Skills from '../sections/skills'
+import AboutMe from '../sections/aboutMe'
 
 const HomePage = () => {
     return(
         <div>
             <Nav />
-            <Skills />
+            <AboutMe />
         </div>
     )
 }
