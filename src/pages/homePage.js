@@ -6,6 +6,7 @@ import Testimonials from "../sections/testimonials";
 import Skills from "../sections/skills";
 import AboutMe from "../sections/aboutMe";
 import Portfolio from "../sections/portfolio";
+
 import { Element } from "react-scroll";
 
 const HomePage = () => {
@@ -30,6 +31,7 @@ const HomePage = () => {
       <Element name="contactMe">
         <ContactMe />
       </Element>
+      
     </div>
   );
 };
