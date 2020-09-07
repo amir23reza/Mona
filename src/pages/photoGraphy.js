@@ -3,51 +3,74 @@ import { MDBRow, MDBCol, MDBContainer } from 'mdbreact'
 
 
 const Photography = () => {
-    return (
-        <div id="photography">
-             <MDBCol>
-              <MDBRow style={{marginRight : '0px', marginLeft: '0px'}}>
-                  <h1>photography</h1>
-              </MDBRow>
-          </MDBCol>
-          <MDBRow style={{marginRight : '0px', marginLeft: '0px'}}>
-      <MDBCol lg="3" md="6" sm="12">
-        <img class="photo" src={require("../images/photography/7.jpg")} />
-       
-      </MDBCol>
+  return (
+    <div id="photography" >
 
-      <MDBCol lg="3" md="6" sm="12">
-      <img class="photo" src={require("../images/photography/3.jpg")} />
-      </MDBCol>
+      <MDBRow className="sectionTitle" style={{ marginRight: '0px', marginLeft: '0px' }}>
+        <MDBCol className="ArtSection">
+          <h1>photography</h1>
+        </MDBCol>
+      </MDBRow>
 
-      <MDBCol lg="3" md="6" sm="12" >
-      <img class="photo" src={require("../images/photography/8.jpg")} />
-    
-      </MDBCol>
+      <MDBRow style={{ marginRight: '0px', marginLeft: '0px', paddingTop: '30px' }}>
 
-      <MDBCol lg="3" md="6" sm="12" >
-      <img class="photo" src={require("../images/photography/6.jpg")} />
-    
-      </MDBCol>
-    </MDBRow>
+        <MDBCol lg="3" md="6" sm="12">
 
-    <MDBRow style={{marginRight : '0px', marginLeft: '0px', paddingTop:'20px'}}>
-     
-      <MDBCol lg="3" md="6" sm="12">
-      <img class="photo" src={require("../images/photography/9.jpg")} />
-      </MDBCol>
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/7.jpg")} />
+          </div>
 
-      <MDBCol lg="6" md="6" sm="12">
-      <img  class="photo" src={require("../images/photography/12.jpg")} />
-    
-      </MDBCol>
-      <MDBCol lg="3" md="6" sm="12">
-      <img class="photo" src={require("../images/photography/11.jpg")} />
-    
-      </MDBCol>
-    </MDBRow>
-        </div>
-    )
+        </MDBCol>
+
+        <MDBCol lg="3" md="6" sm="12">
+
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/3.jpg")} />
+          </div>
+
+
+        </MDBCol>
+
+        <MDBCol lg="3" md="6" sm="12" >
+
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/8.jpg")} />
+          </div>
+
+        </MDBCol>
+
+        <MDBCol lg="3" md="6" sm="12" >
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/6.jpg")} />
+          </div>
+
+        </MDBCol>
+      </MDBRow>
+
+      <MDBRow style={{ marginRight: '0px', marginLeft: '0px', paddingTop: '20px', paddingBottom:'30px' }}>
+
+        <MDBCol lg="3" md="6" sm="12">
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/9.jpg")} />
+          </div>
+
+        </MDBCol>
+
+        <MDBCol lg="6" md="6" sm="12">
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/12.jpg")} />
+          </div>
+
+        </MDBCol>
+        <MDBCol lg="3" md="6" sm="12">
+          <div class="image-border">
+            <img class="photo" src={require("../images/photography/11.jpg")} />
+          </div>
+
+        </MDBCol>
+      </MDBRow>
+    </div>
+  )
 }
 
 export default Photography;
