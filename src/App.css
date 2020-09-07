@@ -565,3 +565,27 @@ p.eventDate {
 img:hover{
   filter: grayscale(0) brightness(1);
 }
+
+/* architecture:start */
+
+.ArchPhoto{
+  width: 80%;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+  color: #e22b6f;
+  margin: 5px 5px;
+}
+
+.image-border {
+  box-shadow: none;
+  background-color: gray;
+  padding: 0;
+  border-radius: 1.25rem;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
