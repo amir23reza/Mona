@@ -63,6 +63,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 .sectionTitle {
   text-align: center;
   font-family: 'Pacifico', cursive;
+  justify-content: center;
 }
 .logo_img {
   width: 100px;
@@ -474,7 +475,7 @@ p.skillLabel {
 .aboutMeOverlay{
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.50);
   position: absolute;
   top: 0;
 }
@@ -545,3 +546,64 @@ p.eventDate {
   }
 }
 /* Portfolio */
+
+/* photography starts */
+#photography{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  background-image: url("./images/blackBack.jpg");
+ 
+}
+
+.photo{
+  width: 100%;
+  height: 500px;
+  filter: grayscale(1) brightness(0.5); 
+  transition: 0.3s linear ;
+}
+
+img:hover{
+  filter: grayscale(0) brightness(1);
+}
+
+/* architecture:start */
+
+.ArchPhoto{
+  width: 80%;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+  color: #e22b6f;
+  margin: 5px 5px;
+}
+li a {
+  font-family: "Poppins", sans-serif;
+  padding: 5px 15px;
+  font-weight: 300;
+}
+.image-border {
+  box-shadow: none;
+  background-color: gray;
+  padding: 0;
+  border-radius: 1.25rem;
+  box-shadow: 3px 3px 8px 0px rgba(253, 0, 118, 0.2);
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.image-border img{
+  border-radius: 1.25rem;
+}
+
+.ArtSection{
+  padding-top: 30px;
+  text-align: center;
+}
+.button-border{
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+}

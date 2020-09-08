@@ -13,7 +13,7 @@ const UIProjects = () => {
           </MDBCol>
 
           <MDBCol lg="9" style={{ padding: "10px 10px" }}>
-            <img className="UiPhoto" src={require("../images/2.PNG")} />
+            <img className="UiPhoto" src={require("../images/2.PNG")} alt="/" />
           </MDBCol>
 
           <MDBCol lg="3" className="descript">

@@ -14,6 +14,7 @@ const Portfolio = () => {
                 Portfolio
                 </h1>
             </Typing>
+            
             <MDBRow style={{marginRight : '0px', marginLeft: '0px'}}>
                 <MDBCol lg="3" md="6" sm="12" style={{padding : '0px'}}>
                     <Link to="/arch">
@@ -52,6 +53,8 @@ const Portfolio = () => {
                     </Link>
                 </MDBCol>
             </MDBRow>
+         
+           
         </section>
     )
 }
