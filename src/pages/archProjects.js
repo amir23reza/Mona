@@ -23,7 +23,7 @@ const ArchProjects = () => {
                             </div>
                             <div class="col-lg-9 text-right">
                                 <a>
-                                <img class="ArchPhoto" src={require("../images/Arch/2.png")} />
+                                <img class="ArchPhoto" src={require("../images/Arch/2.jpg")} />
                                 </a>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const ArchProjects = () => {
                             </div>
                             <div class="col-lg-9 text-right">
                                 <a>
-                                <img class="ArchPhoto" src={require("../images/Arch/13.png")} />
+                                <img class="ArchPhoto" src={require("../images/Arch/13.jpg")} />
                                 </a>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const ArchProjects = () => {
                             </div>
                             <div class="col-lg-9 text-right">
                                 <a>
-                                <img class="ArchPhoto" src={require("../images/Arch/17.png")} />
+                                <img class="ArchPhoto" src={require("../images/Arch/17.jpg")} />
                                 </a>
                             </div>
                         </div>

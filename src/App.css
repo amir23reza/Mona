@@ -687,20 +687,43 @@ p.eventDate {
   min-height: 100vh;
   background-color: black;
   background-image: url("./images/blackBack.jpg");
-
 }
-
+.photoContainer {
+  background-color: gray;
+  padding: 0;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 8px 0px rgba(253, 0, 118, 0.2);
+  transition: all 300ms;
+}
 .photo {
   width: 100%;
   height: 500px;
-  filter: grayscale(1) brightness(0.5);
-  transition: 0.3s linear;
+  border-radius: 2px;
+  filter: grayscale(.85) brightness(0.7);
+  transition: all 300ms;
 }
 
-img:hover {
-  filter: grayscale(0) brightness(1);
+.photoContainer:hover{
+  border-radius: 8px;
+  transform: scale(1.02);
+  box-shadow: 3px 3px 8px 0px rgba(253, 0, 118, 0.5);
+  cursor: pointer;
 }
 
+.photoContainer:hover>.photo{
+  border-radius: 8px;
+  filter: grayscale(.00) brightness(1);
+}
+
+.modalPhotoContainer {
+  width: 100%;
+}
+.modalPhoto{
+  height: 100%;
+  width: 100%;
+}
 /* architecture:start */
 
 .ArchPhoto {

@@ -1,99 +1,109 @@
-import React from "react";
-import { MDBRow, MDBCol } from "mdbreact";
+import React, { useState } from "react";
+import { MDBRow, MDBCol, MDBNavbar, MDBNavbarBrand, MDBModal, MDBModalHeader, MDBModalBody } from "mdbreact";
+import Typing from 'react-typing-animation'
 
 const Photography = () => {
+  const [images, setImages] = useState([
+    {
+      src: require("../images/photography/7.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/3.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/8.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/6.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/9.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/12.jpg"),
+      lg: "6",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+    {
+      src: require("../images/photography/11.jpg"),
+      lg: "3",
+      md: "6",
+      sm: "12",
+      alt: "gallery"
+    },
+  ])
+  const [isModalOpen, toggleModal] = useState(false)
+  const [activePhoto, setActivePhoto] = useState(null)
   return (
     <div id="photography">
-      <MDBRow
-        className="sectionTitle"
-        style={{ marginRight: "0px", marginLeft: "0px" }}
-      >
-        <MDBCol className="ArtSection">
-          <h1>photography</h1>
-        </MDBCol>
-      </MDBRow>
+
+      <MDBNavbar color="myNavBar" fixed="top" dark scrolling transparent>
+        <MDBNavbarBrand href="/">
+          <img
+            src={require("../images/logo.png")}
+            className="fluid logo_img"
+            alt="logo"
+          />
+        </MDBNavbarBrand>
+        <Typing speed={100} cursor={null}>
+          <h3
+            className="sectionTitle"
+            style={{ marginTop: '15px' }}
+          >
+            Photography
+          </h3>
+        </Typing>
+      </MDBNavbar>
+
+
 
       <MDBRow
-        style={{ marginRight: "0px", marginLeft: "0px", paddingTop: "30px" }}
+        style={{ marginRight: "0px", marginLeft: "0px", paddingTop: "120px" }}
       >
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/7.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
+        {
+          images.map(img => (
+            <MDBCol lg={img.lg} md={img.md} sm={img.sm}>
+              <div className="photoContainer" onClick={() => { setActivePhoto(img); toggleModal(true) }}>
+                <img
+                  className="photo"
+                  src={img.src}
+                  alt={img.alt}
+                />
+              </div>
+            </MDBCol>
+          ))
+        }
 
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/3.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
-
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/8.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
-
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/6.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
       </MDBRow>
-
-      <MDBRow
-        style={{
-          marginRight: "0px",
-          marginLeft: "0px",
-          paddingTop: "20px",
-          paddingBottom: "30px",
-        }}
-      >
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/9.jpg")}
-              alt="/"
-            />
+      <MDBModal isOpen={isModalOpen} size="lg" toggle={()=>{toggleModal(!isModalOpen)}} >
+        <MDBModalBody>
+          <div className="modalPhotoContainer">
+            <img className="modalPhoto" src={activePhoto != null ? activePhoto.src : require("../images/photography/1.jpg")} />
           </div>
-        </MDBCol>
-
-        <MDBCol lg="6" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/12.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
-        <MDBCol lg="3" md="6" sm="12">
-          <div class="image-border">
-            <img
-              class="photo"
-              src={require("../images/photography/11.jpg")}
-              alt="/"
-            />
-          </div>
-        </MDBCol>
-      </MDBRow>
+        </MDBModalBody>
+      </MDBModal>
     </div>
   );
 };

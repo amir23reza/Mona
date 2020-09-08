@@ -36,19 +36,19 @@ const OtherProjects = () => {
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/1.png")} />
+                        <img class="img-fluid" src={require("../images/Art/1.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/2.png")} />
+                        <img class="img-fluid" src={require("../images/Art/2.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/3.png")} />
+                        <img class="img-fluid" src={require("../images/Art/3.jpg")} />
                     </div>
                 </MDBCol>
 
@@ -58,19 +58,19 @@ const OtherProjects = () => {
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/4.png")} />
+                        <img class="img-fluid" src={require("../images/Art/4.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/5.png")} />
+                        <img class="img-fluid" src={require("../images/Art/5.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/6.png")} />
+                        <img class="img-fluid" src={require("../images/Art/6.jpg")} />
                     </div>
                 </MDBCol>
 
@@ -80,19 +80,19 @@ const OtherProjects = () => {
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/7.png")} />
+                        <img class="img-fluid" src={require("../images/Art/7.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/8.png")} />
+                        <img class="img-fluid" src={require("../images/Art/8.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/14.png")} />
+                        <img class="img-fluid" src={require("../images/Art/14.jpg")} />
                     </div>
                 </MDBCol>
 
@@ -102,19 +102,19 @@ const OtherProjects = () => {
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/10.png")} />
+                        <img class="img-fluid" src={require("../images/Art/10.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/11.png")} />
+                        <img class="img-fluid" src={require("../images/Art/11.jpg")} />
                     </div>
                 </MDBCol>
 
                 <MDBCol lg="4">
                     <div class="image-border">
-                        <img class="img-fluid" src={require("../images/Art/12.png")} />
+                        <img class="img-fluid" src={require("../images/Art/12.jpg")} />
                     </div>
                 </MDBCol>
 
