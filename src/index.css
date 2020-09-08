@@ -11,19 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.UiPhoto {
-  width: 100%;
-}
-
-.descript {
-  display: flex;
-  background: #3c3c3c;
-  border-radius: 1.5rem;
-}
-
-.descriptOne {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
