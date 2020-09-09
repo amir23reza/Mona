@@ -1,85 +1,98 @@
-import React from 'react'
-import { MDBRow, MDBCol, MDBContainer, MDBNavbar, MDBNavbarBrand, MDBModal, MDBModalHeader, MDBModalBody } from "mdbreact";
-import { Link } from 'react-router-dom'
+import React from "react";
+import { MDBRow, MDBCol, MDBContainer } from "mdbreact";
+import { Link } from "react-router-dom";
 const ArchProjects = () => {
-    return (
-        <div>
-            <div id="architecture">
-                <MDBContainer >
+  return (
+    <div id="architecture">
+      <div>
+        <MDBContainer>
+          <MDBRow className="sectionTitle">
+            <MDBCol lg="12" className="ArtSection">
+              <h1>Academic Projects</h1>
+            </MDBCol>
+          </MDBRow>
 
-                    <MDBRow class="row mx-0">
-                        <div class="col-lg-12 mt-2">
-                            <h1>Academic Projects</h1>
-                        </div>
-                    </MDBRow>
+          <MDBRow
+            style={{ marginRight: "0px", marginLeft: "0px", marginTop: "60px" }}
+          >
+            <MDBCol lg="6" class="text-right">
+              <Link to="/thesis">
+                <div>
+                  <img
+                    alt="/"
+                    class="ArchPhoto"
+                    src={require("../images/Arch/2.jpg")}
+                  />
+                </div>
+              </Link>
+            </MDBCol>
+            <MDBCol lg="6" className="descriptTow">
+              <h3>Title:</h3>
+              <p>
+                Residential And Cultural Complex
+                <span>with the approach in contextual architecture</span>
+              </p>
+              <h4>Location: </h4>
+              <p>Qeshm Island,Iran </p>
+              <h4>Date: </h4>
+              <p>April-2019 </p>
+            </MDBCol>
+          </MDBRow>
 
-                    <MDBRow>
-                        <div class="col-lg-3">
-                            <h3>Thesis Project:</h3>
-                            <h4>
-                                Residential And Cultural Complex
-                         <span>with the approach in contextual architecture</span>
-                            </h4>
-                            <h4>
-                                Location: <span>Qeshm Island,Iran </span>
-                            </h4>
-                        </div>
-                        <div class="col-lg-9 text-right">
+          <MDBRow
+            style={{ marginRight: "0px", marginLeft: "0px", marginTop: "60px" }}
+          >
+            <MDBCol lg="6" class="text-right">
+              <Link to="/thesis">
+                <div>
+                  <img
+                    alt="/"
+                    class="ArchPhoto"
+                    src={require("../images/Arch/13.jpg")}
+                  />
+                </div>
+              </Link>
+            </MDBCol>
+            <MDBCol lg="6" className="descriptTow">
+              <h3>Title:</h3>
+              <p>Iranian Art Musuem</p>
+              <h4>Location: </h4>
+              <p>Kargar St. Tehran, Iran </p>
+              <h4>Date: </h4>
+              <p>April-2019 </p>
+            </MDBCol>
+          </MDBRow>
 
-
-                            <Link to="/thesis">
-                                <div >
-                                    <img class="ArchPhoto" src={require("../images/Arch/2.jpg")} />
-                                </div>
-                            </Link>
-
-
-
-                        </div>
-                    </MDBRow>
-
-
-
-                    <MDBRow>
-                        <div class="col-lg-3">
-                            <h3>Thesis Project:</h3>
-                            <h4>
-                                Residential And Cultural Complex
-                         <span>with the approach in contextual architecture</span>
-                            </h4>
-                            <h4>
-                                Location: <span>Qeshm Island,Iran </span>
-                            </h4>
-                        </div>
-                        <div class="col-lg-9 text-right">
-                            <a>
-                                <img class="ArchPhoto" src={require("../images/Arch/13.jpg")} />
-                            </a>
-                        </div>
-                    </MDBRow>
-
-                    <MDBRow>
-                        <div class="col-lg-3">
-                            <h3>Thesis Project:</h3>
-                            <h4>
-                                Residential And Cultural Complex
-                         <span>with the approach in contextual architecture</span>
-                            </h4>
-                            <h4>
-                                Location: <span>Qeshm Island,Iran </span>
-                            </h4>
-                        </div>
-                        <div class="col-lg-9 text-right">
-                            <a>
-                                <img class="ArchPhoto" src={require("../images/Arch/17.jpg")} />
-                            </a>
-                        </div>
-                    </MDBRow>
-
-                </MDBContainer>
-            </div>
-        </div>
-    )
-}
+          <MDBRow
+            style={{ marginRight: "0px", marginLeft: "0px", marginTop: "60px" }}
+          >
+            <MDBCol lg="6" class="text-right">
+              <Link to="/thesis">
+                <div className="image-border">
+                  <img
+                    alt="/"
+                    class="ArchPhoto"
+                    src={require("../images/Arch/17.jpg")}
+                  />
+                </div>
+              </Link>
+            </MDBCol>
+            <MDBCol lg="6" className="descriptTow">
+              <h3>Title:</h3>
+              <p>
+                Residential complex with the approach in enhancement of social
+                intractions in public spaces
+              </p>
+              <h4>Location: </h4>
+              <p>Golha Boulevard. Tehran </p>
+              <h4>Date: </h4>
+              <p>April-2019 </p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </div>
+    </div>
+  );
+};
 
 export default ArchProjects;

@@ -688,6 +688,7 @@ p.eventDate {
   background-color: black;
   background-image: url("./images/blackBack.jpg");
 }
+
 .photoContainer {
   background-color: gray;
   padding: 0;
@@ -697,6 +698,7 @@ p.eventDate {
   box-shadow: 3px 3px 8px 0px rgba(253, 0, 118, 0.2);
   transition: all 300ms;
 }
+
 .photo {
   width: 100%;
   height: 500px;
@@ -705,14 +707,14 @@ p.eventDate {
   transition: all 300ms;
 }
 
-.photoContainer:hover{
+.photoContainer:hover {
   border-radius: 8px;
   transform: scale(1.02);
   box-shadow: 3px 3px 8px 0px rgba(253, 0, 118, 0.5);
   cursor: pointer;
 }
 
-.photoContainer:hover>.photo{
+.photoContainer:hover>.photo {
   border-radius: 8px;
   filter: grayscale(.00) brightness(1);
 }
@@ -720,11 +722,17 @@ p.eventDate {
 .modalPhotoContainer {
   width: 100%;
 }
-.modalPhoto{
+
+.modalPhoto {
   height: 100%;
   width: 100%;
 }
+
 /* architecture:start */
+
+#architecture {
+  max-height: 100vh;
+}
 
 .ArchPhoto {
   width: 100%;
@@ -796,4 +804,9 @@ li a {
   font-family: "Poppins",
     sans-serif;
 
+}
+
+.descriptTow {
+  background: #3c3c3c;
+  border-radius: 1rem;
 }

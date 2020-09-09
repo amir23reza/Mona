@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import { MDBRow, MDBCol, MDBNavbar, MDBNavbarBrand, MDBModal, MDBModalHeader, MDBModalBody } from "mdbreact";
-import Typing from 'react-typing-animation'
+import {
+  MDBRow,
+  MDBCol,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBModal,
+  MDBModalHeader,
+  MDBModalBody,
+} from "mdbreact";
+import Typing from "react-typing-animation";
 
 const Photography = () => {
   const [images, setImages] = useState([
@@ -9,56 +17,56 @@ const Photography = () => {
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
+      category: 1,
     },
     {
       src: require("../images/photography/3.jpg"),
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
     {
       src: require("../images/photography/8.jpg"),
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
     {
       src: require("../images/photography/6.jpg"),
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
     {
       src: require("../images/photography/9.jpg"),
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
     {
       src: require("../images/photography/12.jpg"),
       lg: "6",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
     {
       src: require("../images/photography/11.jpg"),
       lg: "3",
       md: "6",
       sm: "12",
-      alt: "gallery"
+      alt: "gallery",
     },
-  ])
-  const [isModalOpen, toggleModal] = useState(false)
-  const [activePhoto, setActivePhoto] = useState(null)
+  ]);
+  const [isModalOpen, toggleModal] = useState(false);
+  const [activePhoto, setActivePhoto] = useState(null);
   return (
     <div id="photography">
-
       <MDBNavbar color="myNavBar" fixed="top" dark scrolling transparent>
         <MDBNavbarBrand href="/">
           <img
@@ -68,39 +76,46 @@ const Photography = () => {
           />
         </MDBNavbarBrand>
         <Typing speed={100} cursor={null}>
-          <h3
-            className="sectionTitle"
-            style={{ marginTop: '15px' }}
-          >
+          <h3 className="sectionTitle" style={{ marginTop: "15px" }}>
             Photography
           </h3>
         </Typing>
       </MDBNavbar>
 
-
-
       <MDBRow
         style={{ marginRight: "0px", marginLeft: "0px", paddingTop: "120px" }}
       >
-        {
-          images.map(img => (
-            <MDBCol lg={img.lg} md={img.md} sm={img.sm}>
-              <div className="photoContainer" onClick={() => { setActivePhoto(img); toggleModal(true) }}>
-                <img
-                  className="photo"
-                  src={img.src}
-                  alt={img.alt}
-                />
-              </div>
-            </MDBCol>
-          ))
-        }
-
+        {images.map((img) => (
+          <MDBCol lg={img.lg} md={img.md} sm={img.sm}>
+            <div
+              className="photoContainer"
+              onClick={() => {
+                setActivePhoto(img);
+                toggleModal(true);
+              }}
+            >
+              <img className="photo" src={img.src} alt={img.alt} />
+            </div>
+          </MDBCol>
+        ))}
       </MDBRow>
-      <MDBModal isOpen={isModalOpen} size="lg" toggle={()=>{toggleModal(!isModalOpen)}} >
+      <MDBModal
+        isOpen={isModalOpen}
+        size="lg"
+        toggle={() => {
+          toggleModal(!isModalOpen);
+        }}
+      >
         <MDBModalBody>
           <div className="modalPhotoContainer">
-            <img className="modalPhoto" src={activePhoto != null ? activePhoto.src : require("../images/photography/1.jpg")} />
+            <img
+              className="modalPhoto"
+              src={
+                activePhoto != null
+                  ? activePhoto.src
+                  : require("../images/photography/1.jpg")
+              }
+            />
           </div>
         </MDBModalBody>
       </MDBModal>
