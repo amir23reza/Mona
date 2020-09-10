@@ -23,11 +23,11 @@ const Skills = () => {
                   {
                       activeTab == "1" ? (
                         <div className="tabContainer activeTabContainer" onClick={()=>{toggleActiveTab("1")}}>
-                            <p className="tabTitle activeTabTitle">IELTS</p>
+                            <p className="tabTitle activeTabTitle">UI/UX Design</p>
                         </div>
                       ) : (
                         <div className="tabContainer" onClick={()=>{toggleActiveTab("1")}}>
-                            <p className="tabTitle">IELTS</p>
+                            <p className="tabTitle">UI/UX Design</p>
                         </div>
                       )
                   }
@@ -36,11 +36,11 @@ const Skills = () => {
                 {
                       activeTab == "2" ? (
                         <div className="tabContainer activeTabContainer" onClick={()=>{toggleActiveTab("2")}}>
-                            <p className="tabTitle activeTabTitle">skillGroup2</p>
+                            <p className="tabTitle activeTabTitle">Architectural Software</p>
                         </div>
                       ) : (
                         <div className="tabContainer" onClick={()=>{toggleActiveTab("2")}}>
-                            <p className="tabTitle">skillGroup2</p>
+                            <p className="tabTitle">Architectural Software</p>
                         </div>
                       )
                   }
@@ -49,11 +49,11 @@ const Skills = () => {
                 {
                       activeTab == "3" ? (
                         <div className="tabContainer activeTabContainer" onClick={()=>{toggleActiveTab("3")}}>
-                            <p className="tabTitle activeTabTitle">skillGroup3</p>
+                            <p className="tabTitle activeTabTitle">Language Skills</p>
                         </div>
                       ) : (
                         <div className="tabContainer" onClick={()=>{toggleActiveTab("3")}}>
-                            <p className="tabTitle">skillGroup3</p>
+                            <p className="tabTitle">Language Skills</p>
                         </div>
                       )
                   }
@@ -66,76 +66,91 @@ const Skills = () => {
                   {
                       activeTab == "1" ? (
                           <div>
-                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="0ms">
-                                    <p className="skillLabel">Listening</p>
-                                    <MDBProgress value={83} heigth="40px" color="progress">
-                                        <span className="progressText">7.5</span>
+                               
+                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="500ms">
+                                    <p className="skillLabel">HTML 5 / CSS 3 / BOOTSTRAP</p>
+                                    <MDBProgress value={88} heigth="40px" color="progress">
+                                        {/* <span className="progressText">8</span> */}
                                     </MDBProgress>
                                 </MDBAnimation>
-                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="500ms">
-                                    <p className="skillLabel">Reading</p>
-                                    <MDBProgress value={88} heigth="40px" color="progress">
-                                        <span className="progressText">8</span>
+                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="0ms">
+                                    <p className="skillLabel">VUE JS</p>
+                                    <MDBProgress value={75} heigth="40px" color="progress">
+                                        {/* <span className="progressText">7.5</span> */}
+                                    </MDBProgress>
+                                </MDBAnimation>
+                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="0ms">
+                                    <p className="skillLabel">React JS</p>
+                                    <MDBProgress value={50} heigth="40px" color="progress">
+                                        {/* <span className="progressText">7.5</span> */}
                                     </MDBProgress>
                                 </MDBAnimation>
                                 <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="1000ms">
-                                    <p className="skillLabel">Speaking</p>
-                                    <MDBProgress value={72} heigth="40px" color="progress">
-                                        <span className="progressText">6.5</span>
+                                    <p className="skillLabel">PHOTOSHOP / ILLUSTRATOR</p>
+                                    <MDBProgress value={80} heigth="40px" color="progress">
+                                        {/* <span className="progressText">6.5</span> */}
                                     </MDBProgress>
                                 </MDBAnimation>
                                 <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="1500ms">
-                                    <p className="skillLabel">Speaking</p>
-                                    <MDBProgress value={72} heigth="40px" color="progress">
-                                        <span className="progressText">6.5</span>
+                                    <p className="skillLabel">INDESIGN / AdobeXD</p>
+                                    <MDBProgress value={80} heigth="40px" color="progress">
+                                        {/* <span className="progressText">6.5</span> */}
                                     </MDBProgress>
                                 </MDBAnimation>
-                                <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="2000ms">
-                                    <p className="skillLabel">Overall Score</p>
-                                    <MDBProgress value={77} heigth="40px" color="progress">
-                                        <span className="progressText">7</span>
-                                    </MDBProgress>
-                                </MDBAnimation>
+                               
                           </div>
                       ) : activeTab == "2" ? (
                         <div>
                             <MDBAnimation reveal type="fadeInDown" duration="1500ms" delay="0ms">
-                                <p className="skillLabel">Skill2-1</p>
+                                <p className="skillLabel">Revit</p>
                                 <MDBProgress value={83} heigth="40px" color="progress">
-                                    <span className="progressText">83</span>
+                                    {/* <span className="progressText">83</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
                             <MDBAnimation reveal type="fadeInDown" duration="1500ms" delay="500ms">
-                                <p className="skillLabel">skill2-2</p>
+                                <p className="skillLabel">AutoCad (2d ,3d)</p>
                                 <MDBProgress value={88} heigth="40px" color="progress">
-                                    <span className="progressText">88</span>
+                                    {/* <span className="progressText">88</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
                             <MDBAnimation reveal type="fadeInDown" duration="1500ms" delay="1000ms">
-                                <p className="skillLabel">skill2-3</p>
+                                <p className="skillLabel">3D Max</p>
                                 <MDBProgress value={72} heigth="40px" color="progress">
-                                    <span className="progressText">72</span>
+                                    {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
+                             <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="1500ms">
+                                    <p className="skillLabel">Lumion</p>
+                                    <MDBProgress value={77} heigth="40px" color="progress">
+                                        {/* <span className="progressText">7</span> */}
+                                    </MDBProgress>
+                                </MDBAnimation>
                         </div>
                       ) : (
                         <div>
                             <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="0ms">
-                                <p className="skillLabel">Skill3-1</p>
+                                <p className="skillLabel">English Profeciency</p>
                                 <MDBProgress value={83} heigth="40px" color="progress">
-                                    <span className="progressText">83</span>
+                                    <span className="progressText">IELTS 7</span>
+                                </MDBProgress>
+                            </MDBAnimation>
+                           
+                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1000ms">
+                                <p className="skillLabel">Persian</p>
+                                <MDBProgress value={100} heigth="40px" color="progress">
+                                    {/* <span className="progressText">72</span> */}
+                                </MDBProgress>
+                            </MDBAnimation>
+                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1500ms">
+                                <p className="skillLabel">Arabic</p>
+                                <MDBProgress value={50} heigth="40px" color="progress">
+                                    {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
                             <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="500ms">
-                                <p className="skillLabel">skill3-2</p>
-                                <MDBProgress value={88} heigth="40px" color="progress">
-                                    <span className="progressText">88</span>
-                                </MDBProgress>
-                            </MDBAnimation>
-                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1000ms">
-                                <p className="skillLabel">skill3-3</p>
-                                <MDBProgress value={72} heigth="40px" color="progress">
-                                    <span className="progressText">72</span>
+                                <p className="skillLabel">Germany</p>
+                                <MDBProgress value={30} heigth="40px" color="progress">
+                                    {/* <span className="progressText">88</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
                         </div>

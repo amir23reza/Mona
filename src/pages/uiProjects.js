@@ -104,6 +104,10 @@ const UIProjects = () => {
           </MDBCol>
         </MDBRow>
       </MDBAnimation>
+
+      <MDBAnimation type="fadeInLeft" duration="1500ms" delay="1000ms">
+
+     
       <MDBRow
         style={{ marginRight: "0px", marginLeft: "0px", marginTop: "60px" }}
       >
@@ -187,11 +191,10 @@ const UIProjects = () => {
           </MDBRow>
         </MDBCol>
       </MDBRow>
-
-      <MDBAnimation>
-
       </MDBAnimation>
-     
+
+
+      <MDBAnimation type="fadeInLeft" duration="1500ms" delay="1500ms">
       <MDBRow
         style={{ marginRight: "0px", marginLeft: "0px", marginTop: "60px" }}
       >
@@ -280,6 +283,9 @@ const UIProjects = () => {
           </MDBRow>
         </MDBCol>
       </MDBRow>
+      </MDBAnimation>
+
+     
 
     </MDBContainer>
 

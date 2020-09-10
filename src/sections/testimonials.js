@@ -13,7 +13,7 @@ const Testimonials = () => {
                     <MDBCol lg="4" md="4" sm="12">
                         <MDBCard className="testimonials_card">
                             <div className="avatarContainer">
-                                <img className="avatar" src={require("../images/avatar.jpg")} />
+                                <img className="avatar" src={require("../images/taheri.png")} />
                             </div>
                             <div className="testimonial_card_content">
                                 <p className="Testimonials_fullName">
@@ -34,19 +34,20 @@ const Testimonials = () => {
                     <MDBCol lg="4" md="4" sm="12">
                         <MDBCard className="testimonials_card">
                             <div className="avatarContainer">
-                                <img className="avatar" src={require("../images/avatar.jpg")} />
+                                <img className="avatar" src={require("../images/ostadMashhadi.png")} />
                             </div>
                             <div className="testimonial_card_content">
                                 <p className="Testimonials_fullName">
-                                    Mahdi Taheri
+                                    Ali Mashhadi
                                 </p>
                                 <p className="Testimonials_position">
-                                    CEO of Rayan Pajouh Salamat
+                                    Head of the Architecture Department
                                 </p>
                                 <div className="testimonials_devider" />
                                 <MDBIcon icon="quote-left" className="testimonials_icon" />
                                 <p className="testimonials_quote">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                She is a person with positive attitude towards life and enjoys her work. Her extreme interest, persistent
+                                  attitude and intellectual curiosity drive her to get deeply involved in her work and excel in it.
                                 </p>
                                 <MDBIcon icon="quote-right" className="testimonials_icon" />
                             </div>
@@ -55,14 +56,14 @@ const Testimonials = () => {
                     <MDBCol lg="4" md="4" sm="12">
                         <MDBCard className="testimonials_card">
                             <div className="avatarContainer">
-                                <img className="avatar" src={require("../images/avatar.jpg")} />
+                                <img className="avatar" src={require("../images/dana.png")} />
                             </div>
                             <div className="testimonial_card_content">
                                 <p className="Testimonials_fullName">
-                                    Mahdi Taheri
+                                    Dana Azartash
                                 </p>
                                 <p className="Testimonials_position">
-                                    CEO of Rayan Pajouh Salamat
+                                    CTO of RayanPajouh
                                 </p>
                                 <div className="testimonials_devider" />
                                 <MDBIcon icon="quote-left" className="testimonials_icon" />
