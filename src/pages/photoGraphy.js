@@ -5,7 +5,6 @@ import {
   MDBNavbar,
   MDBNavbarBrand,
   MDBModal,
-  MDBModalHeader,
   MDBModalBody,
 } from "mdbreact";
 import Typing from "react-typing-animation";
