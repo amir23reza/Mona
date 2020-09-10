@@ -810,3 +810,9 @@ li a {
   background: #3c3c3c;
   border-radius: 1rem;
 }
+ol li {
+  list-style: none;
+  display: inline;
+  color: #e22b6f;
+  margin: 5px 5px;
+}
