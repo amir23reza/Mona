@@ -730,15 +730,60 @@ p.eventDate {
 
 /* architecture:start */
 
-#architecture {
-  max-height: 100vh;
+.archProject {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.ArchPhoto {
+.archProjectContainer{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+}
+
+.archPhoto {
   width: 100%;
-  border-radius: 1rem;
+  visibility: hidden;
+  border-radius: 5px;
 }
 
+.dataContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding : 2%;
+  background: rgba(0,0,0,.4);
+  transition: all 500ms;
+}
+
+.archProjectLabel {
+  color: #e22a6b;
+  font-family: 'Pacifico', cursive;
+}
+
+.archProjectInfo {
+  color: #fff;
+  font-family: montserrat, sans-serif;
+}
+
+.archProjectContainer:hover>.dataContainer{
+  background: rgba(0,0,0,.6);
+  transform: scale(1.03);
+}
+
+@media (max-width: 570px) {
+  .dataContainer{
+    position: unset;
+    background: rgba(0,0,0,.6);
+  }
+  .archProjectContainer{
+    width: 100%;
+  }
+}
+/* architecture:end */
 ul li {
   list-style: none;
   display: inline;

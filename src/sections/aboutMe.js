@@ -15,9 +15,7 @@ const AboutMe = () => {
       id="aboutMeSection"
       className="section"
       style={{
-        backgroundImage: `url(${require("../images/aboutMe/" +
-          activeSegment +
-          ".png")})`,
+        backgroundImage: `url(${require("../images/aboutMe/" + activeSegment + ".png")})`,
       }}
     >
       <div className="aboutMeOverlay" />
