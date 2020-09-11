@@ -901,3 +901,7 @@ ol li {
   cursor: pointer;
 }
 /* Other Projects */
+
+.testimonials_card{
+height: 450px;
+}
