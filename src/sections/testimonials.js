@@ -25,7 +25,10 @@ const Testimonials = () => {
                                 <div className="testimonials_devider" />
                                 <MDBIcon icon="quote-left" className="testimonials_icon" />
                                 <p className="testimonials_quote">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                   She is really smart and industrious person.I can count on her,
+                                   when she is given a responsibility.She can comuinicate very well
+                                   with the customers which is really adorable.
+                        
                                 </p>
                                 <MDBIcon icon="quote-right" className="testimonials_icon" />
                             </div>
@@ -46,8 +49,9 @@ const Testimonials = () => {
                                 <div className="testimonials_devider" />
                                 <MDBIcon icon="quote-left" className="testimonials_icon" />
                                 <p className="testimonials_quote">
-                                She is a person with positive attitude towards life and enjoys her work. Her extreme interest, persistent
-                                  attitude and intellectual curiosity drive her to get deeply involved in her work and excel in it.
+                                She is a person with positive attitude towards life and enjoys
+                                 her work. Her extreme interest, persistent attitude and intellectual
+                                  curiosity drive her to get deeply involved in her work and excel in it.
                                 </p>
                                 <MDBIcon icon="quote-right" className="testimonials_icon" />
                             </div>
@@ -68,8 +72,9 @@ const Testimonials = () => {
                                 <div className="testimonials_devider" />
                                 <MDBIcon icon="quote-left" className="testimonials_icon" />
                                 <p className="testimonials_quote">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
+                                    She always tries to boost her skills.When she counters with difficulties,she tries 
+                                    to solve them creatively and patiently.
+                                </p> 
                                 <MDBIcon icon="quote-right" className="testimonials_icon" />
                             </div>
                         </MDBCard>

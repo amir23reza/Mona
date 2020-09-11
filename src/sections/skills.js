@@ -115,7 +115,7 @@ const Skills = () => {
                             </MDBAnimation>
                             <MDBAnimation reveal type="fadeInDown" duration="1500ms" delay="1000ms">
                                 <p className="skillLabel">3D Max</p>
-                                <MDBProgress value={72} heigth="40px" color="progress">
+                                <MDBProgress value={50} heigth="40px" color="progress">
                                     {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
