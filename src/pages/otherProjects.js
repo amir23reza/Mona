@@ -78,10 +78,25 @@ const OtherProjects = () => {
 
       <MDBContainer style={{paddingTop: "120px"}}>
         <div>
-          <p className="otherProjectsParagraph">
-              In a professional context it often happens that private clients
-              order a publication to be made.
-          </p>
+          {
+            activeCategory == 0 ? (
+              <p className="otherProjectsParagraph">
+                para 0 all
+              </p>
+            ) : activeCategory == 1 ? (
+              <p className="otherProjectsParagraph">
+                para 1 cat 1
+              </p>
+            ) : activeCategory == 2 ? (
+              <p className="otherProjectsParagraph">
+                para 2 cat 2
+              </p>
+            ) : (
+                    <p className="otherProjectsParagraph">
+                      para 3 cat 3
+                    </p>
+                  )
+          }
 
           <MDBRow>      
             <MDBCol lg="3" md="3" sm="12">

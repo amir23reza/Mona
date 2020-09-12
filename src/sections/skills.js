@@ -119,7 +119,7 @@ const Skills = () => {
                                     {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
-                             <MDBAnimation reveal type="fadeInLeft" duration="1500ms" delay="1500ms">
+                             <MDBAnimation reveal type="fadeInDown" duration="1500ms" delay="1500ms">
                                     <p className="skillLabel">Lumion</p>
                                     <MDBProgress value={77} heigth="40px" color="progress">
                                         {/* <span className="progressText">7</span> */}
@@ -135,19 +135,19 @@ const Skills = () => {
                                 </MDBProgress>
                             </MDBAnimation>
                            
-                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1000ms">
+                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="500ms">
                                 <p className="skillLabel">Persian</p>
                                 <MDBProgress value={100} heigth="40px" color="progress">
                                     {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
-                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1500ms">
+                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1000ms">
                                 <p className="skillLabel">Arabic</p>
                                 <MDBProgress value={50} heigth="40px" color="progress">
                                     {/* <span className="progressText">72</span> */}
                                 </MDBProgress>
                             </MDBAnimation>
-                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="500ms">
+                            <MDBAnimation reveal type="fadeInRight" duration="1500ms" delay="1500ms">
                                 <p className="skillLabel">Germany</p>
                                 <MDBProgress value={30} heigth="40px" color="progress">
                                     {/* <span className="progressText">88</span> */}
