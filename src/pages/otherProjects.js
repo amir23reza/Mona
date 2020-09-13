@@ -1,66 +1,73 @@
 import React, { useState } from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBNavbar, MDBNavbarBrand, MDBModal, MDBModalBody } from "mdbreact";
-import Typing from 'react-typing-animation'
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBModal,
+  MDBModalBody,
+} from "mdbreact";
+import Typing from "react-typing-animation";
 
 const OtherProjects = () => {
-
   const [activeCategory, setActiveCategory] = useState(0);
   const [images, setImages] = useState([
     {
-      src : require("../images/Art/1.jpg"),
-      categoryCode : 1
+      src: require("../images/Art/1.jpg"),
+      categoryCode: 2,
     },
     {
-      src : require("../images/Art/2.jpg"),
-      categoryCode : 2
+      src: require("../images/Art/2.jpg"),
+      categoryCode: 2,
     },
     {
-      src : require("../images/Art/3.jpg"),
-      categoryCode : 2
+      src: require("../images/Art/3.jpg"),
+      categoryCode: 3,
     },
     {
-      src : require("../images/Art/4.jpg"),
-      categoryCode : 1
+      src: require("../images/Art/4.jpg"),
+      categoryCode: 3,
     },
     {
-      src : require("../images/Art/5.jpg"),
-      categoryCode : 3
+      src: require("../images/Art/5.jpg"),
+      categoryCode: 3,
     },
     {
-      src : require("../images/Art/6.jpg"),
-      categoryCode : 1
+      src: require("../images/Art/6.jpg"),
+      categoryCode: 3,
+    },
+
+    {
+      src: require("../images/Art/10.jpg"),
+      categoryCode: 1,
     },
     {
-      src : require("../images/Art/7.jpg"),
-      categoryCode : 1
+      src: require("../images/Art/11.jpg"),
+      categoryCode: 1,
     },
     {
-      src : require("../images/Art/8.jpg"),
-      categoryCode : 2
+      src: require("../images/Art/12.jpg"),
+      categoryCode: 1,
     },
     {
-      src : require("../images/Art/14.jpg"),
-      categoryCode : 3
+      src: require("../images/Art/14.jpg"),
+      categoryCode: 1,
     },
     {
-      src : require("../images/Art/10.jpg"),
-      categoryCode : 1
+      src: require("../images/Art/7.jpg"),
+      categoryCode: 2,
     },
     {
-      src : require("../images/Art/11.jpg"),
-      categoryCode : 2
+      src: require("../images/Art/8.jpg"),
+      categoryCode: 2,
     },
-    {
-      src : require("../images/Art/12.jpg"),
-      categoryCode : 3
-    },
-  ])
+  ]);
   const [isModalOpen, toggleModal] = useState(false);
   const [activePhoto, setActivePhoto] = useState(null);
 
   return (
     <div>
-
       <MDBNavbar color="myNavBar" fixed="top" dark scrolling transparent>
         <MDBNavbarBrand href="/">
           <img
@@ -76,114 +83,135 @@ const OtherProjects = () => {
         </Typing>
       </MDBNavbar>
 
-      <MDBContainer style={{paddingTop: "120px"}}>
+      <MDBContainer style={{ paddingTop: "120px" }}>
         <div>
-          {
-            activeCategory == 0 ? (
-              <p className="otherProjectsParagraph">
-                para 0 all
-              </p>
-            ) : activeCategory == 1 ? (
-              <p className="otherProjectsParagraph">
-                para 1 cat 1
-              </p>
-            ) : activeCategory == 2 ? (
-              <p className="otherProjectsParagraph">
-                para 2 cat 2
-              </p>
-            ) : (
-                    <p className="otherProjectsParagraph">
-                      para 3 cat 3
-                    </p>
-                  )
-          }
+          {activeCategory === 0 ? (
+            <p className="otherProjectsParagraph">
+              I indulge my passion from graphic design to art installation.
+            </p>
+          ) : activeCategory === 1 ? (
+            <p className="otherProjectsParagraph">
+              These are some of my handmade posters. Their techniques are oil
+              and pastel.
+            </p>
+          ) : activeCategory === 2 ? (
+            <p className="otherProjectsParagraph">
+              These are some of my sketches form university.
+            </p>
+          ) : (
+            <p className="otherProjectsParagraph">
+              It was a group project to design an intractive space.A performance
+              was also design to disoriented the meaning of human body
+            </p>
+          )}
 
-          <MDBRow>      
+          <MDBRow>
             <MDBCol lg="3" md="3" sm="12">
-              {
-                activeCategory == 0 ? (
-                  <div className="otherProjectsCategory" onClick={()=>{setActiveCategory(0)}}>
-                    <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
-                      All
-                    </p>
-                  </div>
-                ) : (
-                    <div onClick={()=>{setActiveCategory(0)}}>
-                      <p className="otherProjectsCategoryTitle">
-                        All
-                      </p>
-                    </div>
-                  )
-              }
+              {activeCategory === 0 ? (
+                <div
+                  className="otherProjectsCategory"
+                  onClick={() => {
+                    setActiveCategory(0);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
+                    All
+                  </p>
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    setActiveCategory(0);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle">All</p>
+                </div>
+              )}
             </MDBCol>
             <MDBCol lg="3" md="3" sm="12">
-              {
-                activeCategory == 1 ? (
-                  <div className="otherProjectsCategory" onClick={()=>{setActiveCategory(1)}}>
-                    <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
-                      Posters
-                    </p>
-                  </div>
-                ) : (
-                    <div onClick={()=>{setActiveCategory(1)}}>
-                      <p className="otherProjectsCategoryTitle">
-                        Posters
-                      </p>
-                    </div>
-                  )
-              }
+              {activeCategory === 1 ? (
+                <div
+                  className="otherProjectsCategory"
+                  onClick={() => {
+                    setActiveCategory(1);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
+                    Posters
+                  </p>
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    setActiveCategory(1);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle">Posters</p>
+                </div>
+              )}
             </MDBCol>
             <MDBCol lg="3" md="3" sm="12">
-              {
-                activeCategory == 2 ? (
-                  <div className="otherProjectsCategory" onClick={()=>{setActiveCategory(2)}}>
-                    <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
-                      Drawings
-                    </p>
-                  </div>
-                ) : (
-                    <div onClick={()=>{setActiveCategory(2)}}>
-                      <p className="otherProjectsCategoryTitle">
-                        Drawings
-                      </p>
-                    </div>
-                  )
-              }
+              {activeCategory === 2 ? (
+                <div
+                  className="otherProjectsCategory"
+                  onClick={() => {
+                    setActiveCategory(2);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
+                    Drawings
+                  </p>
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    setActiveCategory(2);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle">Drawings</p>
+                </div>
+              )}
             </MDBCol>
             <MDBCol lg="3" md="3" sm="12">
-              {
-                activeCategory == 3 ? (
-                  <div className="otherProjectsCategory" onClick={()=>{setActiveCategory(3)}}>
-                    <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
+              {activeCategory === 3 ? (
+                <div
+                  className="otherProjectsCategory"
+                  onClick={() => {
+                    setActiveCategory(3);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle activeOtherProjectsCategoryTitle">
                     Installation Art
-                    </p>
-                  </div>
-                ) : (
-                  <div onClick={()=>{setActiveCategory(3)}}>
-                    <p className="otherProjectsCategoryTitle">
-                    Installation Art
-                    </p>
-                  </div>
-                )
-              }
+                  </p>
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    setActiveCategory(3);
+                  }}
+                >
+                  <p className="otherProjectsCategoryTitle">Installation Art</p>
+                </div>
+              )}
             </MDBCol>
           </MDBRow>
         </div>
-        <MDBRow style={{ paddingTop: "30px", paddingBottom : "30px" }}>
-          {
-            images.map(img => (
-                  ( activeCategory == 0 || img.categoryCode == activeCategory) ? (
-                    <MDBCol lg="4" md="4" sm="12">
-                      <div className="otherProjectsImageContainer" onClick={()=>{setActivePhoto(img);toggleModal(true)}}>
-                        <img
-                          className="otherProjectImage"
-                          src={img.src}
-                        />
-                      </div>
-                    </MDBCol>
-                  ) : null
-            ))
-          }
+        <MDBRow style={{ paddingTop: "30px", paddingBottom: "30px" }}>
+          {images.map((img) =>
+            activeCategory === 0 || img.categoryCode === activeCategory ? (
+              <MDBCol lg="4" md="4" sm="12">
+                <div
+                  className="otherProjectsImageContainer"
+                  onClick={() => {
+                    setActivePhoto(img);
+                    toggleModal(true);
+                  }}
+                >
+                  <img className="otherProjectImage" src={img.src} alt="/" />
+                </div>
+              </MDBCol>
+            ) : null
+          )}
         </MDBRow>
       </MDBContainer>
       <MDBModal
@@ -196,6 +224,7 @@ const OtherProjects = () => {
         <MDBModalBody>
           <div className="modalPhotoContainer">
             <img
+              alt="/"
               className="modalPhoto"
               src={
                 activePhoto != null

@@ -5,20 +5,25 @@ import { Link, Element } from "react-scroll";
 import { elastic as Menu } from "react-burger-menu";
 
 const Nav = () => {
-
-    const [isOpen, toggleIsOpen] = useState(false)
-    useEffect(()=>{
-        // console.log(document.getElementsByClassName("bm-burger-button")[0])
-        // document.getElementsByClassName("bm-burger-button")[0].onclick = ()=>{
-        //     console.log("here")
-        //     toggleIsOpen(true)
-        // }
-    } , [])
+  const [isOpen, toggleIsOpen] = useState(false);
+  useEffect(() => {
+    // console.log(document.getElementsByClassName("bm-burger-button")[0])
+    // document.getElementsByClassName("bm-burger-button")[0].onclick = ()=>{
+    //     console.log("here")
+    //     toggleIsOpen(true)
+    // }
+  }, []);
   return (
     <div>
       <header>
         <Router id="outer-container">
-          <MDBNavbar color="myNavBar" fixed="top" dark scrolling transparent>
+          <MDBNavbar
+            className="myNavBar"
+            fixed="top"
+            dark
+            scrolling
+            transparent
+          >
             <MDBNavbarBrand href="/">
               <img
                 src={require("../images/logo.png")}
@@ -33,33 +38,87 @@ const Nav = () => {
               isOpen={isOpen}
             >
               {/* <main id="page-wrap"> */}
-              <Link to="welcome" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="home" className="aTag" href="/" >
+              <Link
+                to="welcome"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="home" className="aTag" href="/">
                   Home
                 </a>
               </Link>
-              <Link to="aboutMe" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="about" className="aTag" href="/" >
+              <Link
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="about" className="aTag" href="/">
                   About Me
                 </a>
               </Link>
-              <Link to="portfolio" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="contact" className="aTag" href="/" >
+              <Link
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="contact" className="aTag" href="/">
                   Portfolio
                 </a>
               </Link>
-              <Link to="skills" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="contact" className="aTag" href="/" >
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="contact" className="aTag" href="/">
                   Skills
                 </a>
               </Link>
-              <Link to="testimonials" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="contact" className="aTag" href="/" >
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="contact" className="aTag" href="/">
                   Testimonials
                 </a>
               </Link>
-              <Link to="contactMe" spy={true} smooth={true} duration={1200} onClick={()=>{toggleIsOpen(true);toggleIsOpen(false)}}>
-                <a id="contact" className="aTag" href="/" >
+              <Link
+                to="contactMe"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                onClick={() => {
+                  toggleIsOpen(true);
+                  toggleIsOpen(false);
+                }}
+              >
+                <a id="contact" className="aTag" href="/">
                   Contact Me
                 </a>
               </Link>
