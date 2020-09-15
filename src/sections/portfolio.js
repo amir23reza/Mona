@@ -94,11 +94,11 @@ const Portfolio = () => {
         div className = "categoryContainer"
         style = {
             {
-                backgroundImage: `url(${require("../images/porfolio/4.jpg")})`,
+                backgroundImage: `url(${require("../images/porfolio/7.jpg")})`,
             }
         } >
         <
-        h3 className = "categoryTitle" > Others < /h3>{" "} <
+        h3 className = "categoryTitle" > Art Works < /h3>{" "} <
         /div>{" "} <
         /Link>{" "} <
         /MDBCol>{" "} <
