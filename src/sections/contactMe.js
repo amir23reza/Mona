@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MDBContainer,
   MDBRow,
@@ -9,8 +9,43 @@ import {
   MDBBtn,
 } from "mdbreact";
 import Typing from 'react-typing-animation';
+import Axios from "axios";
 
 const ContactMe = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const submitForm = () => {
+    if(name && email && message) {
+      // code goes here ...
+      Axios.post("http://amirrezahaghverdi.com/contact.php", {
+        name, 
+        email,
+        phone : "subject for mona : " + subject,
+        company : "not indicated for mona",
+        message : "message for mona, please forward the following message to mona seyf's email" + message
+      })
+      .then(data => {
+        if(data.data === 1 && data.status === 200){
+          alert("I received your message successfully, Thank You :)");
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+          // this.setState({isLoading : false})
+      }
+      })
+      .catch(error => {
+        console.log(error)
+      })
+    } else {
+      alert("please fill out mandatory fields indicated with *")
+    }
+  }
+
   return (
     <section id="contactMe" className="section">
       <MDBContainer>
@@ -59,6 +94,7 @@ const ContactMe = () => {
                       id="form-contact-name"
                       label="Name *"
                       autocomplete="off"
+                      onChange={(name)=>{setName(name.target.value)}}
                     />
                   </div>
                 </MDBCol>
@@ -69,6 +105,7 @@ const ContactMe = () => {
                       id="form-contact-email *"
                       label="Email *"
                       autocomplete="off"
+                      onChange={(email)=>{setEmail(email.target.value)}}
                     />
                   </div>
                 </MDBCol>
@@ -81,6 +118,7 @@ const ContactMe = () => {
                       id="form-contact-email *"
                       label="Subject (Optional)"
                       autocomplete="off"
+                      onChange={(subject)=>{setSubject(subject.target.value)}}
                     />
                   </div>
                 </MDBCol>
@@ -93,12 +131,14 @@ const ContactMe = () => {
                       id="form-contact-message"
                       label="Message *"
                       rows="5"
+                      onChange={(message)=>{setMessage(message.target.value)}}
                     />
                     <MDBBtn
                       block
                       className="sendBtn"
                       type="submit"
                       color="send"
+                      onClick={submitForm}
                     >
                       <MDBIcon icon="paper-plane" />
                     </MDBBtn>
